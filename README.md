@@ -32,8 +32,8 @@ Add comments to the place where you want to update in your readme file.
 
 You can add a video game with:
    ```markdown
-   <!-- video-game-box start -->
-   <!-- video-game-box end -->
+   <!-- favorite-game-box start -->
+   <!-- favorite-game-box end -->
    ```
 
 ### Project setup
