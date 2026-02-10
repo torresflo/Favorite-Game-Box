@@ -40,6 +40,8 @@ You can add a video game with:
 
 For updating your github profile README, you can follow [update-video-game-box.yml](https://github.com/torresflo/Favorite-Game-Box/blob/master/.github/workflows/update-video-game-box.yml) to create a GitHub Action in your README repository.
 
+A game from the file `data/games.json` will be randomly picked and placed in the readme file each time the workflow is ran. The current list corresponds to my own personal preferences. The best way to customize it to your needs is to fork the project, update the JSON file and replace the repository address in the workflow file (`update-video-game-box.yml`).
+
 ## Example
 
 Here is an example from my own profile that you could obtain:
