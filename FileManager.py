@@ -36,7 +36,13 @@ class FileManager:
         string += "```\n"
         string += f"{videoGame.m_name}\n\n"
         string += f"📅 Released {videoGame.m_releaseDate}\n"
-        string += f"🏗️ Created by {videoGame.m_developer}\n\n"
+        string += f"🏗️ Created by {videoGame.m_developer}\n"
+        string += "🕹️ Playable on "
+        for indexPlatform, platform in enumerate(videoGame.m_platforms):
+            string += f"{platform}"
+            if indexPlatform < len(videoGame.m_platforms) - 1:
+                string += ", "
+        string += "\n\n"
         string += textwrap.fill(videoGame.m_description, 80)
         string += "\n```\n"
         string += "<!-- Powered by https://github.com/torresflo/Favorite-Game-Box. -->\n"
