@@ -34,10 +34,10 @@ class FileManager:
     def computeVideoGameString(videoGame : VideoGame) -> str:
         string = f"{FileManager.FavoriteGameBoxStartString}\n"
         string += "```\n"
-        string += f"{videoGame.m_name}\n"
+        string += f"{videoGame.m_name}\n\n"
         string += f"📅 Released {videoGame.m_releaseDate}\n"
         string += f"🏗️ Created by {videoGame.m_developer}\n\n"
-        string += textwrap.fill(videoGame.m_description)
+        string += textwrap.fill(videoGame.m_description, 80)
         string += "\n```\n"
         string += "<!-- Powered by https://github.com/torresflo/Favorite-Game-Box. -->\n"
         return string
