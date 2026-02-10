@@ -1,4 +1,5 @@
 import os
+import textwrap
 
 from VideoGames import VideoGame
 
@@ -36,7 +37,7 @@ class FileManager:
         string += f"{videoGame.m_name}\n"
         string += f"📅 Released {videoGame.m_releaseDate}\n"
         string += f"🏗️ Created by {videoGame.m_developer}\n\n"
-        string += f"{videoGame.m_description}\n"
-        string += "```\n"
+        string += textwrap.fill(videoGame.m_description)
+        string += "\n```\n"
         string += "<!-- Powered by https://github.com/torresflo/Favorite-Game-Box. -->\n"
         return string
