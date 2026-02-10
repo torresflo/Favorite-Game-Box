@@ -4,7 +4,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/torresflo/Favorite-Game-Box.svg)
 
 <p align="center">
-  <h1 align="center">Shortcut Me</h3>
+  <h1 align="center">Favorite Game Box</h3>
 
   <p align="center">
     A little python script to help you update your readme file with a random video game from a list.
